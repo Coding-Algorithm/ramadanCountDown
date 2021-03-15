@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(17, 104, 29);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+}
+
+#wrapper{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    margin: 0 0 100px 0;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.countdownWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown{
+    width: 15%;
+    /* background: rgb(2, 105, 2); */
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.countdown span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background:  rgb(3, 54, 10);
+    /* background: rgba(21, 6, 77, 0.993); */
+    color: white;
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: bold;
+    border-radius: 5px;
+    /* box-shadow: rgba(8, 1, 34, 0.993) 1px 1px 4px 4px; */
+    transition: .5s;
+}
+
+div.countdown span:hover{
+    box-shadow: none;
+    color: rgb(3, 54, 10);
+    /* color: rgb(202, 133, 4); */
+    background: white;
+}
+
+div.countdown span:hover + p{
+    color: white;
+}
+
+div.countdown p{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(3, 54, 10);
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+#creditWrapper{
+    margin-top: 70px;
+    font-size: 20px;
+    color: white;
+}
+
+#creditWrapper a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background: rgb(3, 54, 10);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow:rgb(1, 36, 6) 1px 1px 3px 3px;
+    transition: .5s;
+}
+
+#creditWrapper a:hover{
+    color:rgb(255, 255, 255);
+    background: rgb(6, 83, 16);
+    box-shadow:rgb(5, 73, 16) 1px 1px 3px 3px;
+    color: rgba(255, 255, 255, 0.6);
+    /* transform: scale(5); */
+}
+
+
+
+
+@media all and (max-width : 800px){
+    
+    h2{
+        font-size: 25px;
+    }
+    
+    .countdown{
+        width: 10%;
+        /* background: rgb(2, 105, 2); */
+        margin: 0 20px;
+    }
+    
+    div.countdown span{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    #creditWrapper{
+        margin-top: 80px;
+        font-size: 12px;
+    }
+    
+    #creditWrapper a{
+        text-decoration: none;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        letter-spacing: 1px;
+        transition: .5s;
+    }
+}
