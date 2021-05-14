@@ -4,7 +4,7 @@
             let Seconds = document.querySelector('.sec');
             
             
-            let eventDate = new Date(2021,03,13)
+            let eventDate = new Date(2022,03,2);
         
             function countdown(){
 
@@ -12,14 +12,13 @@
 
                 DateDiff = eventDate.getTime() - now.getTime();
 
-                ToGoSeconds = Math.floor(DateDiff/1000)
+                ToGoSeconds = Math.floor((DateDiff/1000) % 60)
                 ToGoMinutes = Math.floor(ToGoSeconds/60)
                 ToGoHours = Math.floor(ToGoMinutes/60)
                 ToGoDays = Math.floor(ToGoHours/24)
 
-                ToGoSeconds %= 60
-                ToGoMinutes %= 60
-                ToGoHours %= 24
+//                 ToGoMinutes %= 60
+//                 ToGoHours %= 24
                 
 
 
